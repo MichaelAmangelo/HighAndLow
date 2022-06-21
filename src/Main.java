@@ -8,6 +8,7 @@ public class Main {
 
         int n;
         do {
+            
             System.out.print("Enter integer n, greater than 0: ");
 
             n = scan.nextInt();
@@ -19,8 +20,10 @@ public class Main {
         System.out.print("Enter " + n + " integers: ");
         String arrString = "";
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) 
+        {
             arr[i] = scan.nextInt();
+            
             arrString += arr[i] + " ";
         }
         System.out.println();
@@ -37,7 +40,8 @@ public class Main {
 
     }
 
-    public static int max(int[] Array) {
+    public static int max(int[] Array) 
+    {
         int max = Array[0];
 
         for (int i = 0; i < Array.length; i++) {
